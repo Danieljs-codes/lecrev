@@ -18,6 +18,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "turbo": "^2.9.9"
+    "@lecrev/config": "workspace:*",
+    "@types/node": "catalog:",
+    "oxfmt": "^0.48.0",
+    "oxlint": "^1.63.0",
+    "turbo": "^2.9.9",
+    "typescript": "^6.0.3"
   }
 }

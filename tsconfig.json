@@ -1,0 +1,3 @@
+{
+  "extends": "@lecrev/config/tsconfig.base.json",
+}
