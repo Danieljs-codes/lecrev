@@ -16,8 +16,8 @@ build
 .env*.local
 
 # IDEs and editors
-.vscode/*
-.zed/*
+.vscode
+.zed
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json

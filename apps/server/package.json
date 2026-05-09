@@ -1,0 +1,16 @@
+{
+  "name": "@lecrev/server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsdown",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@lecrev/config": "workspace:*"
+  },
+  "devDependencies": {
+    "tsdown": "^0.22.0"
+  }
+}

@@ -3,13 +3,9 @@
   "private": true,
   "license": "MIT",
   "type": "module",
-  "packageManager": "pnpm@11.0.0",
-  "engines": {
-    "node": "26.x"
-  },
   "scripts": {
     "prepare": "effect-language-service patch",
-    "check": "oxlint && oxfmt --write"
+    "check": "oxlint -c ./.oxlintrc.json && oxfmt --write"
   },
   "devDependencies": {
     "@effect/language-service": "^0.85.1",
@@ -17,7 +13,12 @@
     "@types/node": "catalog:",
     "oxfmt": "^0.48.0",
     "oxlint": "^1.63.0",
+    "oxlint-tsgolint": "^0.22.1",
     "turbo": "^2.9.9",
     "typescript": "^6.0.3"
-  }
+  },
+  "engines": {
+    "node": "26.x"
+  },
+  "packageManager": "pnpm@11.0.0"
 }

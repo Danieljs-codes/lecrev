@@ -1,0 +1,10 @@
+{
+  "extends": "@lecrev/config/base.json",
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "dist",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
