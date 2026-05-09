@@ -4,13 +4,14 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "prepare": "effect-language-service patch",
-    "check": "oxlint -c ./.oxlintrc.json && oxfmt --write"
+    "prepare": "lefthook install && effect-language-service patch",
+    "check": "oxlint -c ./.oxlintrc.json --fix && oxfmt --write"
   },
   "devDependencies": {
     "@effect/language-service": "^0.85.1",
     "@lecrev/config": "workspace:*",
     "@types/node": "catalog:",
+    "lefthook": "^2.1.6",
     "oxfmt": "^0.48.0",
     "oxlint": "^1.63.0",
     "oxlint-tsgolint": "^0.22.1",
