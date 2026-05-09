@@ -1,0 +1,25 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "singleQuote": true,
+  "sortImports": {
+    "newlinesBetween": false,
+    "customGroups": [
+      {
+        "groupName": "effect",
+        "selector": "external",
+        "elementNamePattern": ["effect", "effect/**"]
+      }
+    ],
+    "groups": [
+      "builtin",
+      "effect",
+      { "newlinesBetween": true },
+      "external",
+      ["internal", "subpath"],
+      ["parent", "sibling", "index"],
+      "style"
+    ]
+  },
+  "sortTailwindcss": true,
+  "ignorePatterns": []
+}

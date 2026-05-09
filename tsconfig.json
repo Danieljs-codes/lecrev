@@ -1,3 +1,5 @@
 {
-  "extends": "@lecrev/config/tsconfig.base.json",
+  "$schema": "./node_modules/@effect/language-service/schema.json",
+  "extends": "./packages/config-typescript/base.json",
+  "files": []
 }
