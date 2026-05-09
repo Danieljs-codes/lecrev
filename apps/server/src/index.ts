@@ -1,3 +1,5 @@
-const ola = 1;
+import { Effect } from 'effect';
 
-console.log(ola);
+const randomNumber = Effect.sync(() => Math.random());
+
+console.log(Effect.runSync(randomNumber));

@@ -4,8 +4,11 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
     "prepare": "lefthook install && effect-language-service patch",
-    "check": "oxlint -c ./.oxlintrc.json --fix && oxfmt --write"
+    "check": "oxlint -c ./.oxlintrc.json --fix && oxfmt --write",
+    "start": "turbo run start"
   },
   "devDependencies": {
     "@effect/language-service": "^0.85.1",

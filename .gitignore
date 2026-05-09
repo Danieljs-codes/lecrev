@@ -1,5 +1,9 @@
 .idea
-update-effect-smol.sh
+update-effect
+.references/
+MISTAKES.md
+DESIRES.md
+LEARNINGS.md
 
 # Dependencies
 node_modules

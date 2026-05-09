@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
   "plugins": ["typescript", "unicorn", "oxc", "react", "react-perf"],
-  "ignorePatterns": [".repos/**"],
+  "ignorePatterns": [".references/**"],
   "categories": {
     "correctness": "error",
     "perf": "error",
