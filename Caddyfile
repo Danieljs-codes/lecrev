@@ -1,0 +1,3 @@
+:80 {
+  respond "lecrev caddy is running" 200
+}
