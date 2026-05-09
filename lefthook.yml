@@ -1,10 +1,10 @@
 pre-commit:
   jobs:
     - name: check
-      run: pnpm check
+      run: bun run check
       stage_fixed: true
 
 pre-push:
   jobs:
     - name: check
-      run: pnpm check
+      run: bun run check

@@ -1,11 +1,10 @@
 {
   "extends": "@lecrev/config/base.json",
   "compilerOptions": {
-    "composite": true,
+    "rootDir": "../..",
     "outDir": "dist",
-    "paths": {
-      "@/*": ["./src/*"]
-    },
+    "noEmit": true,
     "types": ["@types/bun"]
-  }
+  },
+  "exclude": ["node_modules", "dist"]
 }

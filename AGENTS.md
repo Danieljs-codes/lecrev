@@ -18,6 +18,7 @@ avoid using specific names or internal info unless explicitly stated to.
 
 Repos in `.references`, such as Effect and Opencode, t3code, are available for
 patterns especially effect patterns. If given a Git URL for reference, update `update-effect` in `.references` to clone it into `.references` and inspect it there.
+If any question is asked always check if it makes sense to check for patters or see how it is done in any repos in `.references`
 
 ## Engineering Priorities
 
