@@ -1,5 +1,8 @@
 packages:
   - 'apps/*'
   - 'packages/*'
+allowBuilds:
+  msgpackr-extract: true
 catalog:
   '@types/node': '^25.6.2'
+  effect: '4.0.0-beta.64'
