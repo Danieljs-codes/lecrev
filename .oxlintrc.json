@@ -8,7 +8,24 @@
     "suspicious": "warn",
     "style": "warn"
   },
-  "rules": {},
+  "rules": {
+    // Effect uses `function*` with Effect.gen/Effect.fnUntraced that don't always yield
+    "require-yield": "off",
+    "new-cap": "off",
+    // Make no-unused-vars produce dangerous fixes (not only suggestions) so fixAllDangerous can apply on save.
+    "no-unused-vars": [
+      "error",
+      {
+        "fix": {
+          "imports": "fix"
+        }
+      }
+    ],
+    // Oxfmt handles import sorting and we have a custom sort order configured in .oxfmtrc.json
+    "sort-imports": "off",
+    "id-length": "off",
+    "capitalized-comments": "off"
+  },
   "env": {
     "builtin": true
   },

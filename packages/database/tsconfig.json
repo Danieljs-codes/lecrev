@@ -4,7 +4,7 @@
     "rootDir": "../..",
     "outDir": "dist",
     "noEmit": true,
-    "types": ["@types/bun"]
+    "types": ["@types/node"]
   },
   "exclude": ["node_modules", "dist"]
 }

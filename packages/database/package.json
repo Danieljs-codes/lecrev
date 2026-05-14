@@ -1,6 +1,15 @@
 {
   "name": "@lecrev/database",
   "private": true,
+  "imports": {
+    "#*": [
+      "./src/*",
+      "./src/*.ts",
+      "./src/*.tsx",
+      "./src/*/index.ts",
+      "./src/*/index.tsx"
+    ]
+  },
   "scripts": {
     "dev": "echo 'Add dev script here'",
     "build": "echo 'Add build script here'",
@@ -8,7 +17,9 @@
     "lint": "echo 'Add lint script here'"
   },
   "dependencies": {
-    "drizzle-orm": "1.0.0-rc.2"
+    "@effect/sql-pg": "catalog:",
+    "drizzle-orm": "1.0.0-rc.2",
+    "effect": "catalog:"
   },
   "devDependencies": {
     "@lecrev/config": "workspace:*",

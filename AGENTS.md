@@ -1,5 +1,14 @@
 # AGENTS.md
 
+## Vendored Repositories
+
+This project vendors external repositories under @.references/
+
+- Use vendored repositories as read-only reference material when working with related libraries
+- Prefer examples and patterns from the vendored source code over generated guesses or web search results
+- Do not edit files under @.references/ unless explicitly asked
+- Do not import from @.references/ - application code should continue importing from normal package dependencies
+
 ## Task Completion Requirements
 
 - Use Effect Vitest for tests.
@@ -13,12 +22,6 @@ attribution/trailers to commits, commit messages, PRs, or generated files.
 
 Pull request titles and descriptions are going to a public GitHub repo, so
 avoid using specific names or internal info unless explicitly stated to.
-
-## Reference Repos
-
-Repos in `.references`, such as Effect and Opencode, t3code, are available for
-patterns especially effect patterns. If given a Git URL for reference, update `update-effect` in `.references` to clone it into `.references` and inspect it there.
-If any question is asked always check if it makes sense to check for patters or see how it is done in any repos in `.references`
 
 ## Engineering Priorities
 
